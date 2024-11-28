@@ -1,37 +1,9 @@
-var __spreadArrays = (this && this.__spreadArrays) || function () {
-    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
-    for (var r = Array(s), k = 0, i = 0; i < il; i++)
-        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
-            r[k] = a[j];
-    return r;
-};
+
 import * as PIXI from 'pixi.js-legacy';
 import { initalizeTextures, Spin, symbolChances, slot } from './spinCalc';
 import { randomInt } from './functions';
-var spritesNow = [];
-var sp;
-var stake = 10;
-var bal = 10000.00;
-var tWin = 0;
-var showLines;
-var bets = [
-    0.5,
-    1,
-    2.5,
-    5,
-    10,
-    20,
-    40,
-    50
-];
-var States;
-(function (States) {
-    States[States["idle"] = 0] = "idle";
-    States[States["spinning"] = 1] = "spinning";
-    States[States["resultWaiting"] = 2] = "resultWaiting";
-    States[States["resultDone"] = 3] = "resultDone";
-    States[States["stopping"] = 4] = "stopping";
-})(States || (States = {}));
+
+
 // Creating Pixi app
 export var app = new PIXI.Application({
     height: window.innerHeight,
@@ -39,7 +11,7 @@ export var app = new PIXI.Application({
     backgroundColor: 0x1099bb,
     transparent: false,
     antialias: false
-});
+}); /*
 PIXI.settings.PRECISION_FRAGMENT = PIXI.PRECISION.HIGH;
 PIXI.settings.ROUND_PIXELS = true;
 PIXI.settings.SCALE_MODE = PIXI.SCALE_MODES.LINEAR;
@@ -630,3 +602,4 @@ function resize() {
 }
 window.addEventListener('resize', resize);
 resize();
+*/
